@@ -4,10 +4,11 @@ export default {
   initialize: function(container) {
     var replyAsNewPrivateMessage = function () {
       var composerController = Discourse.__container__.lookup('controller:composer');
+      var username = window.location.pathname.split('/')[2];
 
       composerController.open({
           action:      Discourse.Composer.PRIVATE_MESSAGE,
-          usernames:   '',
+          usernames:   username,
           archetypeId: 'private_message',
           draftKey:    'new_private_message'
       }).then(function () {
