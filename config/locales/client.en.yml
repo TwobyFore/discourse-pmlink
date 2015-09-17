@@ -1,0 +1,5 @@
+en:
+  js:
+    composer:
+      title_placeholder: "Private message subject line"
+      reply_placeholder: "Type your message here. Feel free to drag or paste images into this area."
